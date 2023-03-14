@@ -1,13 +1,8 @@
 <script>
   import "../app.css";
+  import Layout from "../lib/Layout.svelte";
 </script>
 
-<div style="background: yellow">
+<Layout>
   <slot />
-</div>
-
-<style lang="postcss">
-  :global(html) {
-    background-color: theme(colors.gray.100);
-  }
-</style>
+</Layout>
